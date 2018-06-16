@@ -23,7 +23,7 @@
     "parcel-plugin-vue": "^1.5.0"
   },
   "scripts": {
-    "start": "parcel",
-    "build": "parcel build"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   }
 }
