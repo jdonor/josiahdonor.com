@@ -63,3 +63,4 @@ typings/
 # Parcel cache and dist
 .cache
 dist
+.DS_Store
