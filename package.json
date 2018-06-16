@@ -1,0 +1,10 @@
+{
+  "name": "josiahdonor.com",
+  "version": "1.0.0",
+  "description": "My personal website",
+  "main": "main.js",
+  "repository": "git@github.com:jdonor/josiahdonor.com.git",
+  "author": "Josiah Donor <jdonor@gmail.com>",
+  "license": "MIT",
+  "private": true
+}
