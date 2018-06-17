@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>{{ msg }}</h1>
+    <h1>Josiah Donor</h1>
   </div>
 </template>
 
@@ -17,6 +17,7 @@ export default {
 
 <style lang="css">
 #app {
-  color: #56b983;
+  color: hsla(0, 0%, 100%, 0.9);
+  background-color: hsl(147, 41%, 53%);
 }
 </style>
