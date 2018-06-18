@@ -1,17 +1,21 @@
 <template>
-  <div id="app" class="container mx-auto bg-grey-lightest shadow-lg">
-    <h1 class="text-green-dark p-4 inline-block">Josiah Donor</h1>
-    <span class="bg-green text-grey-lightest p-2 rounded">Software Engineer</span>
-    <span class="bg-green text-grey-lightest p-2 rounded">Musician</span>
-    <span class="bg-green text-grey-lightest p-2 rounded">Husband</span>
-    <span class="bg-green text-grey-lightest p-2 rounded">Dad</span>
+  <div id="app" class="container flex mx-auto bg-grey-lightest shadow-lg">
+    <div class="w-1/3 h-full">
+      <Banner></Banner>
+    </div>
 
-    <Banner></Banner>
+    <div class="w-2/3 h-full p-4">
+      <h1>Josiah Donor</h1>
+      <h2 class="mt-2">Software engineer</h2>
+      <h2>UX designer</h2>
+      <h2>Problem solver</h2>
+      <h2>Technical mentor</h2>
+    </div>
   </div>
 </template>
 
 <script>
-import Banner from './Banner.vue'
+import Banner from './Banner.vue';
 
 export default {
   name: 'App',
@@ -19,8 +23,8 @@ export default {
     return {};
   },
   components: {
-    Banner
-  }
+    Banner,
+  },
 };
 </script>
 
