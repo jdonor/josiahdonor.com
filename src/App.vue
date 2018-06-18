@@ -1,23 +1,28 @@
 <template>
-  <div id="app">
-    <h1>Josiah Donor</h1>
+  <div id="app" class="container mx-auto bg-grey-lightest shadow-lg">
+    <h1 class="text-green-dark p-4 inline-block">Josiah Donor</h1>
+    <span class="bg-green text-grey-lightest p-2 rounded">Software Engineer</span>
+    <span class="bg-green text-grey-lightest p-2 rounded">Musician</span>
+    <span class="bg-green text-grey-lightest p-2 rounded">Husband</span>
+    <span class="bg-green text-grey-lightest p-2 rounded">Dad</span>
+
+    <Banner></Banner>
   </div>
 </template>
 
 <script>
+import Banner from './Banner.vue'
+
 export default {
-  name: 'app',
+  name: 'App',
   data() {
-    return {
-      msg: 'Welcome to Your Vue.js App!',
-    };
+    return {};
   },
+  components: {
+    Banner
+  }
 };
 </script>
 
-<style lang="css">
-#app {
-  color: hsla(0, 0%, 100%, 0.9);
-  background-color: hsl(147, 41%, 53%);
-}
+<style scoped>
 </style>

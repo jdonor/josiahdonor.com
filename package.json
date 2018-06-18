@@ -10,10 +10,10 @@
   "dependencies": {
     "eslint": "^4.19.1",
     "eslint-plugin-vue": "^4.5.0",
+    "parcel-bundler": "^1.9.0",
     "parcel-plugin-eslint": "^1.0.4",
     "prettier-eslint": "^8.8.1",
-    "vue": "^2.5.16",
-    "parcel-bundler": "^1.9.0"
+    "vue": "^2.5.16"
   },
   "devDependencies": {
     "@vue/component-compiler-utils": "^2.0.0",
