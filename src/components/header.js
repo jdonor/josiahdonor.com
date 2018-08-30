@@ -25,6 +25,20 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
+        {/* &nbsp;
+        <Link
+          to="/work-history"
+          style={{
+            color: 'white',
+            textDecoration: 'none',
+          }}
+        >
+          Work history
+        </Link>
+        &nbsp;
+        <Link to="/projects" style={{ color: 'white', textDecoration: 'none' }}>
+          Projects
+        </Link> */}
       </h1>
     </div>
   </div>
