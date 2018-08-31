@@ -14,7 +14,7 @@ const Job = ({
     style={{
       padding: '32px',
       borderRadius: '8px',
-      boxShadow: '0 0.5rem 2rem 0 rgba(0,0,0,.1)',
+      boxShadow: '0 0.5rem 2rem 0 rgba(0,0,0,.2)',
     }}
   >
     <h3>
