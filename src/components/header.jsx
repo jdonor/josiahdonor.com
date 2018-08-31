@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 
 const Header = ({ siteTitle }) => (
@@ -25,23 +26,13 @@ const Header = ({ siteTitle }) => (
         >
           {siteTitle}
         </Link>
-        {/* &nbsp;
-        <Link
-          to="/work-history"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        >
-          Work history
-        </Link>
-        &nbsp;
-        <Link to="/projects" style={{ color: 'white', textDecoration: 'none' }}>
-          Projects
-        </Link> */}
       </h1>
     </div>
   </div>
 );
+
+Header.propTypes = {
+  siteTitle: PropTypes.string.isRequired,
+};
 
 export default Header;
