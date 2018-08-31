@@ -624,6 +624,11 @@ pre tt:after {
 }
 
 /* Navigation */
+#nav {
+  margin: 0 auto;
+  max-width: 960px;
+}
+
 #nav ul li {
   display: inline-block;
   padding: 8px;
