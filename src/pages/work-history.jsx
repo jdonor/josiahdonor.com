@@ -64,7 +64,7 @@ const WorkHistory = () => (
       beginDate="May 2012"
       endDate="January 2013"
       description={[
-        'Created new method for displaying data which significantly improved performace',
+        'Created new method for displaying data which significantly improved performance',
       ]}
       technologies={['C#', 'Objective-C']}
     />
