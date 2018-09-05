@@ -1,7 +1,9 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Job = ({
+const floatRight = { float: 'right' };
+
+function Job({
   company,
   location,
   title,
@@ -9,30 +11,35 @@ const Job = ({
   endDate,
   description,
   technologies,
-}) => (
-  <div
-    style={{
-      padding: '32px',
-      borderRadius: '8px',
-      boxShadow: '0 0.5rem 2rem 0 rgba(0,0,0,.2)',
-    }}
-  >
-    <h3>
-      <strong>{company}</strong>
-      <span style={{ float: 'right' }}>{location}</span>
-    </h3>
-    <h4>
-      <span>{title}</span>
-    </h4>
-    <p>
-      <span>{beginDate}</span>
-      &nbsp;-&nbsp;
-      <span>{endDate}</span>
-    </p>
-    <p>{description}</p>
-    <p>{technologies.join(' - ')}</p>
-  </div>
-);
+}) {
+  const descriptionParagraphs = description.map((text, index) => (
+    <p key={index}>{text}</p>
+  ));
+
+  return (
+    <div
+      style={{
+        marginBottom: '32px',
+        padding: '32px',
+        borderRadius: '8px',
+        boxShadow: '0 0.5rem 2rem 0 rgba(0,0,0,.2)',
+      }}
+    >
+      <span style={floatRight}>{location}</span>
+      <h3>{company}</h3>
+      <p style={floatRight}>
+        <span>{beginDate}</span>
+        &nbsp;-&nbsp;
+        <span>{endDate}</span>
+      </p>
+      <h4>
+        <span>{title}</span>
+      </h4>
+      {descriptionParagraphs}
+      <p>{technologies.join(' - ')}</p>
+    </div>
+  );
+}
 
 Job.propTypes = {
   company: PropTypes.string.isRequired,
@@ -40,7 +47,7 @@ Job.propTypes = {
   title: PropTypes.string.isRequired,
   beginDate: PropTypes.string.isRequired,
   endDate: PropTypes.string,
-  description: PropTypes.string.isRequired,
+  description: PropTypes.arrayOf(PropTypes.string).isRequired,
   technologies: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
