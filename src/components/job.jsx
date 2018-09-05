@@ -3,6 +3,14 @@ import PropTypes from 'prop-types';
 
 const floatRight = { float: 'right' };
 
+const purpleChip = {
+  marginRight: '8px',
+  padding: '8px',
+  borderRadius: '8px',
+  background: 'rebeccapurple',
+  color: 'hsla(0, 100%, 100%, 0.9)',
+};
+
 function Job({
   company,
   location,
@@ -14,6 +22,12 @@ function Job({
 }) {
   const descriptionParagraphs = description.map((text, index) => (
     <p key={index}>{text}</p>
+  ));
+
+  const technologyChips = technologies.map((text, index) => (
+    <span key={index} style={purpleChip}>
+      {text}
+    </span>
   ));
 
   return (
@@ -36,7 +50,7 @@ function Job({
         <span>{title}</span>
       </h4>
       {descriptionParagraphs}
-      <p>{technologies.join(' - ')}</p>
+      <p>{technologyChips}</p>
     </div>
   );
 }
