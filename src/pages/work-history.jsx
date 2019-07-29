@@ -11,6 +11,7 @@ const WorkHistory = () => (
       location="Seattle WA"
       title="Senior Software Development Engineer"
       beginDate="July 2018"
+      endDate="February 2019"
       description={[
         'Create tools to serve the business intelligence needs of travel agencies.',
       ]}
