@@ -17,14 +17,14 @@ const Navigation = () => (
           </Link>
         </li>
 
-        <li>
+        {/* <li>
           <Link
             to="/projects"
             style={{ color: 'white', textDecoration: 'none' }}
           >
             Projects
           </Link>
-        </li>
+        </li> */}
       </ul>
     </div>
   </div>
